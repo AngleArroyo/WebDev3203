@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="mod4javacont.js"></script>
+
+</head>
+<body>
+    <p id = "p1">This is an element testing JavaScript more</p>
+
+    <label for="">IT</label>
+    <input id = "IT_id" type="radio" name = "course" onclick="document.getElementById('p1').style.backgroundColor='red'">
+
+    <label for="">CS</label>
+    <input id = "CS_id" type="radio" name = "course" onclick="document.getElementById('p1').style.fontSize='50px'">
+
+    <label for="">Data Analytics</label>
+    <input id = "DataAnal_id" type="radio" name = "course" onclick="test()">
+
+    <br><br><br><br>
+    <label for="">Enter your name</label>
+    <input id = "submit_id" type="text">
+    <button onclick="test1()">Submit</button>
+    <p id = "p2"></p>
+
+    <br><br><br><br>
+    <label for="">Enter your grade</label>
+    <input id = "grade_id" type="text">
+    <button onclick="calculate_grade()">Submit</button>
+    <p id = "Grade_Output"></p>
+
+</body>
+</html>

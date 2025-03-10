@@ -1,0 +1,24 @@
+h1{
+    color: #7b0f9c; /* as seen, can use color codes or RGB vales */
+    background-color: rgb(32, 196, 106, 0.5); /*this last number relates to its transparency, she didn't state but ranges from 0 to 1 including decimals i think*/
+}
+
+h2{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    
+   /* background: url(https://picsum.photos/seed/picsum/200/300);
+    background-repeat: repeat; */
+
+    background-color: aquamarine; 
+}
+
+.p1Class{
+    color: blue;
+}
+
+#p2Class{
+    color: peru;
+}

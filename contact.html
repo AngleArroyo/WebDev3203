@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact me - My Website</title>
+    <link rel="stylesheet" href="mainCSS.css">
+    <script src="mainJS.js"></script>
+</head>
+<body id="mbg">
+
+    <header id="mh">
+        <section id="mhs">
+            <img id="mePic" src="roundMe.png" width="50" height="50" onclick="location.href='main.html'" title="Click me to take you back to the main">
+        <h1 id="mh1">Contact me</h1>
+        </section>
+
+        <nav id="tabs">
+            <button id="mb" onclick="location.href='home.html'">Home</button>
+            <button id="mb" onclick="location.href='about.html'">About me</button>       <!-- this code simply creates the buttons and has location refs to the other page to load them "on click", see the CSS file for how i styled it-->
+            <button id="mb" onclick="location.href='contact.html'">Contact me</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="mbs4">
+            <h4 id="mh4">Contact me</h4>
+
+            <div id = "mh4t">
+
+            <form>
+            <label id="labels" for="">Full Name</label>
+            <input id="who" type="text" placeholder="Enter your name" required>
+            <br>
+            <br>
+            <label id="labels" for="">Email</label>
+            <input id="where" type="email" placeholder="Enter your email address" required>
+            <br>
+            <br>
+            <label id="labels" for="">Phone Number</label>                  <!-- this is the submission form on my contact page... i didnt like how input type submit lokmed like so i made a button set to submit and applied my defined style for the tab buttons-->
+            <input type="text" placeholder="Enter your phone number">
+            <br>
+            <br>
+            <label id="labels" for=""> Message</label>
+            <textarea placeholder="Type your message here..." cols="20" rows="5"></textarea>
+            <br>
+            <br>
+            <button  id="mb" onclick="formSubmission()"> Submit your form</button>
+            <br>
+            <br>
+            <p id="message"></p>
+            
+            </form>
+
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <section>
+            <p>Luis Angel Arroyo</p>
+            <p>706-980-4095</p>
+            <p>arroyo11825@gmail.com</p>
+        </section>
+    </footer>
+
+</body>
+</html>

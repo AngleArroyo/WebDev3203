@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="mainCSS.css">
+    <script src="mainJS.js"></script>
+</head>
+<body id="mbg">
+
+    <header id="mh"> 
+        <section id="mhs">
+        <img id="mePic" src="roundMe.png" width="50" height="50" onclick="location.href='main.html'" title="Click me to take you back to the main">
+        <marquee width="100%" direction="right" height="autocomplete" id="mh1">Welcome to my first website!</marquee>
+        </section>
+    
+
+        <nav id="tabs">
+            <button id="mb" onclick="location.href='home.html'">Home</button>
+            <button id="mb" onclick="location.href='about.html'">About me</button>       <!-- this code simply creates the buttons and has location refs to the other page to load them "on click", see the CSS file for how i styled it-->
+            <button id="mb" onclick="location.href='contact.html'">Contact me</button>
+            <!--<h3 id="main"><a href="main.html">Click me to go back to main</a></h3> this was my orginal code when i made the tabs, however, i changed it because it would just make text with a hyperlink to the page... i wanted responsive tabs so i changed it to buttons-->
+        </nav>
+    </header>
+
+    <main>
+        <section id="mbs4">
+            <h4 id="mh4">What is this?</h4>
+            <p id="mh4t"><strong>If this is your first time on my website, please feel free to begin here but I reccommend starting at my home page!</strong></p>
+            <p id="mh4t">What you're seeing right now is what I hope to use in the future as where I post updates in my life, professionally and personally, almost like an old school web blog.</p>
+            <p id="mh4t">Addtionally, in the future, I'd like to add a little puzzle/password box here where it will encourage users to go to the other pages and look for digits for the password. Once they find them all and enter them in the correct order... eihter a thank you pops up or it'll redirect you to a thank you page and maybe have a basic html game</p>
+            <p id="mh4t">Seeing as how I'm making this like an update page... I really hope to also implement a mini quiz of sorts on the about me page... like just a simple questionaire about what they read</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Luis Angel Arroyo</p>
+        <p>706-980-4095</p>
+        <p>arroyo11825@gmail.com</p>
+    </footer>
+
+</body>
+</html>
