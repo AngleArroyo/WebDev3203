@@ -1,11 +1,18 @@
-function formSubmission(){
-    var name = document.getElementById("who").value;
-    var email = document.getElementById("where").value;
-    if (name != "" && email != "")         /* the empty strings is so it doesnt display if the boxes are left empty*/
-        window.alert("Thank you " + name + " for your submission. I look foward to seeing your email, " + email + ", in my inbox")
-       /* document.getElementById("message").innerHTML = "Thank you " + name + " for your submission. I look foward to seeing your email, " + email + "in my inbox";
-       i really wanted to make it so where it would put the message on the bottom but it would display it for a second and then reset it (since the form reset too) and i didn't have time to fully implement it
-       
-       addtionally, as mentioned in the main page, I have already a few ideas I like to be able to implement in the future... most of which will require JS... so hope to learn more throughout the semester*/
-    
-}
+document.addEventListener("DOMContentLoaded", function() {
+    let submit = document.getElementById("sb")
+    let text = document.getElementById("message")
+
+    function formSubmission() {
+        let name = document.getElementById("who").value;
+        let email = document.getElementById("where").value;
+
+        if (name != "" && email != ""){
+            
+            text.innerHTML = "Thank you " + name + " for your submission! I look foward to seeing your email, " + email +", in my inbox!";
+            event.preventDefault(); /*the only way (at least in my mind and understanding of it) i could get it working was preventing it but not reseting... which means when you refresh the page the boxes will still be filled... if i reset it, the page would display it for only a second... will look for a soultion at a later time 
+            addtionally, as mentioned in the main page, I have already a few ideas I like to be able to implement in the future... most of which will require JS... so hope to learn more throughout the semester*/
+        }
+        
+    }
+    submit.addEventListener("click", formSubmission)
+});
