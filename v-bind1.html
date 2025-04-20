@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js">  </script>
+
+    <style>.ColorChange {
+        background-color: goldenrod
+    };</style>
+
+</head>
+<body>
+    
+    <div id="appid"> 
+        <p v-if="isActive"> I am true like a boss</p>
+        <p v-else="isActive"> I am false not like a boss</p>
+        <div v-bind:class = "{ColorChange:isActive}">My name here</div>
+    </div>
+
+    <script>
+        const app = Vue.createApp({
+            data(){
+                return {
+                    isActive: false /* true applies the collor change, false removes the color (and formating and so on)
+                    she went on to basically do the grade example changing isActive to 89 79 99 and so on... so it seems like isActive can be boolean or a number... cool*/
+                }
+            }
+             
+        })
+        app.mount("#appid") 
+    </script> 
+
+</body>
+</html>

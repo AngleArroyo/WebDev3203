@@ -5,24 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js">  </script>
+
+    <style>.ColorChange {
+        background-color: goldenrod
+    };</style>
+
 </head>
 <body>
-
-    <div id="app"> 
-        {{message}}
+    
+    <div id="appid"> 
+        <div v-bind:class = "vueClass">My name here</div>
     </div>
 
     <script>
         const app = Vue.createApp({
             data(){
                 return {
-                    message: "Hello World"
+                    vueClass: "ColorChange"
                 }
-            },
-            template : '<h1> Hello Class <h1>' 
+            }
+             
         })
-        app.mount("#app") 
-    </script> <!-- template is another way to do the messgae thing but she said it was suboptimial if you do a lot of code-->
+        app.mount("#appid") 
+    </script> 
 
 </body>
 </html>

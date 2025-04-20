@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact me - My Website</title>
     <link rel="stylesheet" href="mainCSS.css">
-    <script src="mainJS.js"></script>
+  <!--  <script src="mainJS.js"></script>       had to remove because it may have been interfering with node... i wouldn't be able to correctly display what was entered -->
+    <script src="Node.js"></script>
 </head>
 <body id="mbg">
 
@@ -28,24 +29,24 @@
 
             <div id = "mh4t">
 
-            <form id="done">
+            <form id="done" method="post" action="/submit-form">
             <label id="labels" for="">Full Name</label>
-            <input id="who" type="text" placeholder="Enter your name" required>
+            <input id="who" name="fullName" type="text" placeholder="Enter your name" required>
             <br>
             <br>
             <label id="labels" for="">Email</label>
-            <input id="where" type="email" placeholder="Enter your email address" required>
+            <input id="where" name="email" type="email" placeholder="Enter your email address" required>
             <br>
             <br>
             <label id="labels" for="">Phone Number</label>                  <!-- this is the submission form on my contact page... i didnt like how input type submit lokmed like so i made a button set to submit and applied my defined style for the tab buttons-->
-            <input type="text" placeholder="Enter your phone number">
+            <input type="text" name="phoneNumber" placeholder="Enter your phone number">
             <br>
             <br>
             <label id="labels" for=""> Message</label>
-            <textarea placeholder="Type your message here..." cols="20" rows="5"></textarea>
+            <textarea placeholder="Type your message here..." cols="20" rows="5" name="message"></textarea>
             <br>
             <br>
-            <button  id="sb" > Submit your form</button>
+            <button  id="sb" type="submit" > Submit your form</button>
             <br>
             <br>
             <p id="message" class="thanks"></p>
