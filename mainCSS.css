@@ -186,3 +186,37 @@ input, textarea{
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+@media (max-width: 768px) {     /* everything under here is solely so that some of the essential elements of the page appears better on mobile, its a bit of repeating what i did in the above code but adjusting it to screens with the max width of 768px (which are typically phones) */
+    
+    footer {
+        position: relative;
+        margin-top: 20px;
+    }
+    
+    #mbs4a2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #mbs4a2 img {
+        width: 80%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    #tabs {
+        flex-direction: column;
+    }
+
+    #mb {
+        width: 90%;
+        margin: 5px auto; 
+    }
+    
+    #sb {
+        width: 90%;
+        margin: 5px autos;
+    }
+}

@@ -15,7 +15,7 @@ app.post('/submit-form', (req, res) => {
     const fullName = req.body.fullName; 
     const email = req.body.email;
     const phoneNumber = req.body.phoneNumber || "No number provided"; // orginally had if statements that would check first for empty boxes but found that the pipe symbols allow for default messages
-    const message = req.body.message || "No message provided"; 
+    const text = req.body.text || "No message provided"; 
 
     res.send(`
 
@@ -36,7 +36,7 @@ app.post('/submit-form', (req, res) => {
                     <p id = "mh4t">Full name is ${fullName}</p>
                     <p id = "mh4t">Email is ${email}</p>
                     <p id = "mh4t">Phone number is ${phoneNumber}</p>
-                    <p id = "mh4t">Message is "${message}"</p>
+                    <p id = "mh4t">Message is "${text}"</p>
                     <br><br>
                     <button id="mb" onclick="location.href='contact.html'">Back to my contact page</button>
 
@@ -57,3 +57,5 @@ app.post('/submit-form', (req, res) => {
 app.listen(port, () => {
     console.log(`Server running on http://localhost:${port}`);
 });
+
+//I’ll leave this up and connected to contact.html until I get the grade back for milestone #2… I like how the page originally displayed the thank you using mainJS.js and technically this will never work on github as is…
